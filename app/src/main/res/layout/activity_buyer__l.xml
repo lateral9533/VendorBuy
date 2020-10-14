@@ -7,18 +7,16 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <ImageButton
-        android:id="@+id/imageButton6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="103dp"
         android:layout_gravity="center"
+        android:background="@drawable/headingbackground"
         android:text="What Do You Want"
         android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/white"
         android:textSize="30dp" />
 
 
