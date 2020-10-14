@@ -45,6 +45,7 @@ public class signin extends AppCompatActivity {
                     Toast.makeText(signin.this, "User logged in ", Toast.LENGTH_SHORT).show();
                     Intent I = new Intent(signin.this, useractivity.class);
                     startActivity(I);
+                    finish();
                 } else {
                     Toast.makeText(signin.this, "Login to continue", Toast.LENGTH_SHORT).show();
                 }
@@ -55,6 +56,7 @@ public class signin extends AppCompatActivity {
             public void onClick(View view) {
                 Intent I = new Intent(signin.this, MainActivity.class);
                 startActivity(I);
+                finish();
             }
         });
         btnLogIn.setOnClickListener(new View.OnClickListener() {

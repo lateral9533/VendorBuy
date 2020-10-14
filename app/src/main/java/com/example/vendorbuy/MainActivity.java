@@ -18,13 +18,21 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
     public EditText emailId, passwd;
     Button btnSignUp;
     TextView signIn;
     FirebaseAuth firebaseAuth;
-
+    public void onStart() {
+        super.onStart();
+        if (this.firebaseAuth.getCurrentUser()!= null) {
+            startActivity(new Intent(MainActivity.this, useractivity.class));
+            finish();
+        }
+    }
+    //seshasai
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,7 +65,9 @@ public class MainActivity extends AppCompatActivity {
                                         "SignUp unsuccessful: " + task.getException().getMessage(),
                                         Toast.LENGTH_SHORT).show();
                             } else {
-                                startActivity(new Intent(MainActivity.this, useractivity.class));
+                                Intent I = new Intent(MainActivity.this, useractivity.class);
+                                startActivity(I);
+                                finish();
                             }
                         }
                     });
@@ -71,6 +81,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent I = new Intent(MainActivity.this, signin.class);
                 startActivity(I);
+                finish();
             }
         });
     }
