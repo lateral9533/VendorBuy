@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
             finish();
         }
     }
-    //seshasai-lokesh
+    //s
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
