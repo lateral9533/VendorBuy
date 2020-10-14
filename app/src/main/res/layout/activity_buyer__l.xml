@@ -13,6 +13,13 @@
         android:layout_height="wrap_content"
         app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
 
+    <TextView
+        android:id="@+id/textView"
+
+        android:layout_width="561dp"
+        android:layout_height="90dp"
+        android:text="TextView" />
+
     <ImageButton
         android:id="@+id/imageButton7"
         android:layout_width="match_parent"
@@ -73,6 +80,8 @@
         app:srcCompat="@drawable/vegetables"
         tools:layout_editor_absoluteX="68dp"
         tools:layout_editor_absoluteY="138dp" />
+
+
 
 
 </LinearLayout>
