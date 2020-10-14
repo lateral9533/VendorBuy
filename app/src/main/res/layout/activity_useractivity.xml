@@ -8,7 +8,7 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="413dp"
+        android:layout_width="match_parent"
         android:layout_height="150dp"
         android:background="@drawable/headingbackground"
         android:gravity="center"
@@ -27,7 +27,7 @@
         android:layout_height="43dp"
         android:layout_marginTop="136dp"
         android:background="@drawable/button"
-        android:text="I'm an USER"
+        android:text="I'm a Customer"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.568"
@@ -40,7 +40,7 @@
         android:layout_height="44dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/button"
-        android:text="I'm a Customer"
+        android:text="I'm Vendor"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.565"
