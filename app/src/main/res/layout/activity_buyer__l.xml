@@ -7,6 +7,21 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:text="What Do You Want"
+        android:textAlignment="center"
+        android:textSize="30dp" />
+
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -15,22 +30,12 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-            <ImageButton
-                android:id="@+id/imageButton6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
 
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="561dp"
-                android:layout_height="90dp"
-                android:text="TextView" />
 
             <ImageButton
                 android:id="@+id/imageButton7"
                 android:layout_width="match_parent"
-                android:layout_height="317dp"
+                android:layout_height="208dp"
                 android:layout_marginTop="0dp"
                 app:srcCompat="@drawable/vegetables"
                 tools:layout_editor_absoluteX="68dp"

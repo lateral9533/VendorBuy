@@ -36,11 +36,17 @@ public class useractivity extends AppCompatActivity {
         customerbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Intent I = new Intent(useractivity.this, CustomerHome.class);
-                //startActivity(I);
+                Intent I = new Intent(useractivity.this, seller_L.class);
+                startActivity(I);
             }
         });
-
+        userbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent I = new Intent(useractivity.this, Buyer_L.class);
+                startActivity(I);
+            }
+        });
         btnLogOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
