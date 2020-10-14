@@ -1,28 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center"
-    android:orientation="vertical"
-    tools:context=".useractivity">
+    tools:context=".CustomerHome">
 
     <TextView
-        android:layout_width="match_parent"
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:text="Welcome!"
-        android:textSize="40dp" />
+        android:layout_marginTop="132dp"
+        android:text="Hi- Welcome!"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+        android:id="@+id/customerbtn"
+        android:layout_width="311dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:text="I'm a Customer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userbtn" />
+
+    <Button
+        android:id="@+id/userbtn"
+        android:layout_width="316dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="120dp"
+        android:text="I'm an USER"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="192dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="80dp"
+        android:text="What's Your role?"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ImageButton
         android:id="@+id/btnLogOut"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_margin="15dp"
-        android:text="Logout" />
-</RelativeLayout>
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_lock_power_off" />
+</androidx.constraintlayout.widget.ConstraintLayout>
