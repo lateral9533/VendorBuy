@@ -5,8 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:paddingBottom="55dp"
-    tools:context=".BuyerVegitables">
-    Geofence Alert
+    tools:context=".BuyerStreetfood">
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
@@ -15,7 +14,7 @@
         android:layout_marginBottom="26dp"
         android:background="@color/blue"
         android:paddingTop="10dp"
-        android:text="    Locate Vegit.."
+        android:text="    Mobile Food.."
         android:layout_margin="0dp"
         android:textColor="@color/white"
         android:textSize="35dp"
@@ -76,11 +75,11 @@
         android:layout_height="274dp"
         android:layout_marginStart="27dp"
         android:layout_marginLeft="27dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="27dp"
         android:layout_marginRight="27dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sv" />
 

@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".BuyerVegitables"></activity>
+        <activity android:name=".BuyerStreetfood"></activity>
+        <activity android:name=".BuyerVegitables" />
         <activity android:name=".afterdone" />
         <activity android:name=".seller_L" />
         <activity android:name=".seller_vegitables" />

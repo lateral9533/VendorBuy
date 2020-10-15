@@ -1,45 +1,48 @@
 package com.example.vendorbuy;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
-import android.content.Intent;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ListView;
 import android.widget.SearchView;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.Manifest;
 
-public class seller_mfood extends AppCompatActivity {
+public class BuyerStreetfood extends AppCompatActivity  implements AdapterView.OnItemSelectedListener{
+
     SearchView sv;
     String[] s1;
     int j=0;
-    Button bt;
     ListView lv;
     TextView tv;
     String s[]={"Pani Puri","Dosa","drinks","Masala Dosa","pavv baji"};
     ArrayAdapter<String> list;
-    String s2="";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_seller_mfood);
+        setContentView(R.layout.activity_buyer_vegitables);
         tv=(TextView) findViewById(R.id.textView4);
-        bt= (Button) findViewById(R.id.bt);
         lv=(ListView) findViewById(R.id.list);
         sv=(SearchView) findViewById(R.id.sv);
         list=new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,s);
         lv.setAdapter(list);
+
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(seller_mfood.this,s[i],Toast.LENGTH_SHORT).show();
-                s2=s2+s[i];
-                tv.setText(s2);
+                Toast.makeText(BuyerStreetfood.this,s[i],Toast.LENGTH_SHORT).show();
 
+                tv.setText(s[i]);
             }
         });
         sv.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
@@ -54,13 +57,16 @@ public class seller_mfood extends AppCompatActivity {
                 return false;
             }
         });
-        bt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent I = new Intent(seller_mfood.this, afterdone.class);
-                startActivity(I);
-            }
-        });
+
+    }
+
+    @Override
+    public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> adapterView) {
 
     }
 }
