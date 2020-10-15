@@ -13,7 +13,7 @@ import android.widget.SearchView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class seller_mfood extends AppCompatActivity {
+public class seller_mfood extends AppCompatActivity  implements AdapterView.OnItemSelectedListener{
     SearchView sv;
     String[] s1;
     int j=0;
@@ -61,6 +61,16 @@ public class seller_mfood extends AppCompatActivity {
                 startActivity(I);
             }
         });
+
+    }
+
+    @Override
+    public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> adapterView) {
 
     }
 }
