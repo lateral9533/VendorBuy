@@ -1,5 +1,4 @@
 package com.example.vendorbuy;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
@@ -42,6 +41,8 @@ public class seller_L extends AppCompatActivity implements AdapterView.OnItemSel
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Toast.makeText(seller_L.this, s[i], Toast.LENGTH_SHORT).show();
                 tv.setText(s[i]);
+                Intent I = new Intent(seller_L.this, seller_vegitables.class);
+                startActivity(I);
 
 
 
@@ -51,6 +52,7 @@ public class seller_L extends AppCompatActivity implements AdapterView.OnItemSel
         bt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Intent I = new Intent(seller_L.this, seller_vegitables.class);
                 startActivity(I);
             }
