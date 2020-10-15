@@ -30,7 +30,7 @@ public class BuyerVegitables extends AppCompatActivity  implements AdapterView.O
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.seller_vegetables);
+        setContentView(R.layout.activity_buyer_vegitables);
         tv=(TextView) findViewById(R.id.textView4);
         lv=(ListView) findViewById(R.id.list);
         sv=(SearchView) findViewById(R.id.sv);
