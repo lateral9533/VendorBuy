@@ -6,30 +6,48 @@
     android:layout_height="match_parent"
     tools:context=".seller_L">
 
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="357dp"
+        android:layout_height="362dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="344dp"
-        android:layout_height="68dp"
-        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:textAlignment="center"
         android:layout_marginBottom="26dp"
+        android:background="@color/blue"
         android:paddingTop="10dp"
-        android:text="Vendor"
+        android:text="Vendor's"
+        android:layout_margin="0dp"
+        android:textColor="@color/white"
         android:textSize="35dp"
         app:layout_constraintBottom_toTopOf="@+id/imageButton2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageButton"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints"
+        android:gravity="center_horizontal" />
 
     <ImageButton
         android:id="@+id/imageButton"
-        android:layout_width="58dp"
-        android:layout_height="63dp"
+        android:layout_width="103dp"
+        android:layout_height="72dp"
         android:layout_marginStart="3dp"
         android:layout_marginLeft="3dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton2"
-        app:layout_constraintEnd_toStartOf="@+id/textView3"
+        android:background="@color/buttoncolor"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/abc_vector_test"
@@ -45,12 +63,34 @@
         android:layout_marginTop="52dp"
         android:layout_marginEnd="6dp"
         android:layout_marginRight="6dp"
+        android:layout_marginBottom="54dp"
         android:paddingTop="10dp"
         android:text="What is your today product?"
         android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/list"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="139dp"
+        android:layout_marginLeft="139dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="184dp"
+        android:layout_marginRight="184dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button"
+        android:text="Select Item"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/list"
+        app:layout_constraintVertical_bias="1.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
