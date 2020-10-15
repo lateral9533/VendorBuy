@@ -22,8 +22,9 @@ public class seller_L extends AppCompatActivity implements AdapterView.OnItemSel
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_seller__l);
         ListView lv;
-        TextView tv;
+        final TextView tv;
         Button bt;
+        String s2;
         final String[] s={"Vegetables","Mobile Food","Home Things","Ice Cream"};
         final ArrayAdapter<String> list;
 
@@ -34,11 +35,14 @@ public class seller_L extends AppCompatActivity implements AdapterView.OnItemSel
         bt= (Button) findViewById(R.id.bt);
         list=new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,s);
         lv.setAdapter(list);
+        tv=(TextView) findViewById(R.id.tv8);
 
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Toast.makeText(seller_L.this, s[i], Toast.LENGTH_SHORT).show();
+                tv.setText(s[i]);
+
 
 
             }
