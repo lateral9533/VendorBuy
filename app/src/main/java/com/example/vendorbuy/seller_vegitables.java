@@ -39,7 +39,7 @@ lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
         Toast.makeText(seller_vegitables.this,s[i],Toast.LENGTH_SHORT).show();
-        s2=s2+","+s[i];
+        s2=s2+s[i]+",";
         tv.setText(s2);
 
     }
