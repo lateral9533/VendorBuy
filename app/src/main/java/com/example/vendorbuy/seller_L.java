@@ -41,22 +41,25 @@ public class seller_L extends AppCompatActivity implements AdapterView.OnItemSel
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Toast.makeText(seller_L.this, s[i], Toast.LENGTH_SHORT).show();
                 tv.setText(s[i]);
-                Intent I = new Intent(seller_L.this, seller_vegitables.class);
-                startActivity(I);
+                if(s[i]=="Vegetables") {
+                    Intent I = new Intent(seller_L.this, seller_vegitables.class);
+                    startActivity(I);
+                }
+                if(s[i]=="Mobile Food") {
+                    Intent I = new Intent(seller_L.this, seller_mfood.class);
+                    startActivity(I);
+                }
+                if(s[i]=="Home Things") {
+                    Intent I = new Intent(seller_L.this, seller_hthings.class);
+                    startActivity(I);
+                }
 
 
 
             }
 
         });
-        bt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                Intent I = new Intent(seller_L.this, seller_vegitables.class);
-                startActivity(I);
-            }
-        });
+       
     }
 
 

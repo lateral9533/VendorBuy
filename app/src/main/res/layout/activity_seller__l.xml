@@ -83,8 +83,10 @@
         android:layout_marginEnd="184dp"
         android:layout_marginRight="184dp"
         android:layout_marginBottom="30dp"
+
         android:background="@drawable/button"
         android:text="Select Item"
+
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -97,9 +99,11 @@
         android:id="@+id/tv8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:text="TextView"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.164"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
