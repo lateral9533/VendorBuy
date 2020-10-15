@@ -31,26 +31,25 @@
 
 
             <ImageButton
-                android:id="@+id/imageButton7"
-                android:layout_width="match_parent"
-                android:layout_height="208dp"
-                android:layout_marginTop="0dp"
-                app:srcCompat="@drawable/vegetables"
-                tools:layout_editor_absoluteX="68dp"
-                tools:layout_editor_absoluteY="138dp" />
-
-
-            <ImageButton
-                android:id="@+id/imageButton13"
+                android:id="@+id/imageButton3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:srcCompat="@drawable/veg" />
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="match_parent"
+                android:layout_height="186dp"
+                android:background="@color/white"
                 app:srcCompat="@drawable/food2" />
 
             <ImageButton
-                android:id="@+id/imageButton8"
+                android:id="@+id/imageButton5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/things" />
+                android:background="@color/white"
+                app:srcCompat="@drawable/thi" />
 
         </LinearLayout>
     </ScrollView>

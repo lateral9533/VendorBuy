@@ -13,6 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".seller_L"></activity>
+        <activity android:name=".seller_vegitables" />
         <activity android:name=".Buyer_L" />
         <activity android:name=".useractivity" />
         <activity android:name=".signin" />
