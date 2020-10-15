@@ -6,12 +6,14 @@ import androidx.core.content.ContextCompat;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.SearchView;
 import android.widget.TextView;
@@ -25,6 +27,7 @@ public class BuyerVegitables extends AppCompatActivity  implements AdapterView.O
     int j=0;
     ListView lv;
     TextView tv;
+    Button locate,geofencealert,buy;
     String s[]={"Tomatos","Potatos","Brinjals","Carrots","Ladies Fingers","Cucumber"};
     ArrayAdapter<String> list;
     @Override
@@ -34,6 +37,33 @@ public class BuyerVegitables extends AppCompatActivity  implements AdapterView.O
         tv=(TextView) findViewById(R.id.textView4);
         lv=(ListView) findViewById(R.id.list);
         sv=(SearchView) findViewById(R.id.sv);
+        locate=(Button) findViewById(R.id.locate);
+        buy=(Button) findViewById(R.id.buy);
+        geofencealert=(Button) findViewById(R.id.locate);
+        locate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent I = new Intent(BuyerVegitables.this, MapsActivity.class);
+                startActivity(I);
+                finish();
+            }
+        });
+        buy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent I = new Intent(BuyerVegitables.this, Boughtsucessfully.class);
+                startActivity(I);
+                finish();
+            }
+        });
+        geofencealert.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent I = new Intent(BuyerVegitables.this, Alert.class);
+                startActivity(I);
+                finish();
+            }
+        });
         list=new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,s);
         lv.setAdapter(list);
 
@@ -59,6 +89,7 @@ public class BuyerVegitables extends AppCompatActivity  implements AdapterView.O
         });
 
     }
+
 
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {

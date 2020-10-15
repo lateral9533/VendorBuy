@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".BuyerStreetfood"></activity>
+        <activity android:name=".Alert"></activity>
+        <activity android:name=".Boughtsucessfully" />
+        <activity android:name=".BuyerStreetfood" />
         <activity android:name=".BuyerVegitables" />
         <activity android:name=".afterdone" />
         <activity android:name=".seller_L" />
